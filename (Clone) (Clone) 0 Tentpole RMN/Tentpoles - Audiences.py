@@ -1,4 +1,9 @@
 # Databricks notebook source
+df = spark.read.table("ulvr_prod_audience_xfer.ulvr_af_sub_category1_x_retailer_lotion_x_target_20231018")
+df.count()
+
+# COMMAND ----------
+
 import pyspark.sql.functions as F
 import pyspark.sql.types as T
 import datetime as dt
